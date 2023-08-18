@@ -12,14 +12,12 @@ function App() {
   return (
     <>
       <Router>
-        <div className="mainC min-h-screen">
-        <Nav></Nav>
+        
           <Routes>
             <Route path="/" element={<Home></Home>}></Route>
             <Route path="/credit" element={<Credit></Credit>}></Route>
             <Route path="/search" element={<Search></Search>}></Route>
           </Routes>
-        </div>
       </Router>
     </>
   );

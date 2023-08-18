@@ -1,23 +1,30 @@
 import { useState, useEffect } from "react";
 import Btn from "../components/Btn";
+import {Nav} from "../components/ui/Nav";
+import { Link } from "react-router-dom";
 
 function Home() {
   
   return (
     <>
-      <main className="w-full flex flex-col md:flex-row justify-around">
-        <div className="md:w-1/3 w-full flex flex-col justify-center">
-          <h1 className="text-center text-5xl font-bold text-white">Discover poems that reflect who you are</h1>
-          <p className="text-center text-xl mt-8 text-brown-100">
+    <div className="mainC h-screen relative min-h-[800px] md:min-h-[600px]">
+        <Nav></Nav>
+      <main className="w-full h-full absolute left-0 top-0 items-center flex flex-col justify-center md:flex-row md:justify-around">
+        <div className="md:w-1/3 w-full flex flex-col justify-center px-5 md:p-0">
+          <h1 className="text-center text-2xl md:text-5xl font-bold text-white px-5 md:p-0">Discover poems that reflect who you are</h1>
+          <p className="text-center text-base md:text-xl mt-8 text-brown-100">
           Nombres que inspiran poesía. Ingresa el tuyo, encuentra un poema único. Celebra la belleza de la poesía personalizada. ¡Explora ahora!
             {/* {JSON.stringify(lines)} */}
              
           </p>
           <div className="w-1/3 mx-auto mt-5">
-          <Btn text={"Empezar"}></Btn>
+            <Link to={"/search"}>
+              <Btn text={"Empezar"}></Btn>
+            </Link>
+          
         </div>
         </div>
-        <figure className="h-96 md:h-[80vh] w-full md:w-1/3">
+        <figure className="h-64 md:h-[80vh] max-h-[1000px] min-h-[400px] mx-auto md:mx-0 w-2/4 md:w-1/3">
           <img
             src="/img/hero1.png"
             alt="library"
@@ -25,8 +32,7 @@ function Home() {
           />
         </figure>
       </main>
-
-      <section></section>
+      </div>
     </>
   );
 }
