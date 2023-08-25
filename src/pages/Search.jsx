@@ -50,7 +50,7 @@ function Search() {
                 htmlFor="name"
                 className="text-white font-semibold text-xl text-center"
               >
-                Escribe tu nombre
+                Enter your name
               </label>
               <input
                 type="text"
@@ -71,9 +71,9 @@ function Search() {
               
               <button
                 type="submit"
-                className="duration-500 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-green-700 text-white shadow-md shadow-green-700/10 hover:shadow-2xl hover:shadow-green-700/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-full"
+                className="duration-500 align-middle select-none font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-green-700 text-white shadow-md shadow-green-700/10 hover:shadow-2xl hover:shadow-green-700/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-full"
               >
-                Enviar
+                Send
               </button>
               
               
@@ -82,10 +82,10 @@ function Search() {
           <section className="rounded-md p-5 bg-brown-300 w-11/12 md:w-4/5 mx-auto my-8 text-white">
             {poem.length > 0 ? (
               <>
-                <p className="text-2xl md:text-5xl font-semibold">
+                <p className="fontS text-2xl md:text-5xl font-semibold">
                   {poem[0].title}
                 </p>
-                <span className="text-xs font-light block ml-5 mt-5">
+                <span className="fontS text-xs font-light block ml-5 mt-5">
                   -{poem[0].author}
                 </span>
               </>
@@ -95,13 +95,17 @@ function Search() {
             {lines.length > 0 ? (
               <div className="flex flex-col gap-4 items-center mt-10">
                 {lines.map((line, index) => (
-                  <span className="text-sm md:text-lg font-light" key={index}>
+                  <span className="fontS hover:text-xl duration-200 text-sm md:text-lg font-light" key={index}>
                     {line}
                   </span>
                 ))}
               </div>
             ) : (
-              <span>Ingresa tu nombre y presiona buscar</span>
+              <>
+              <span className="block text-center text-xl">Enter your name and press send</span>
+              <img src="/img/search1.png" className="w-52 h-52 object-contain mx-auto" alt="search" />
+              </>
+              
             )}
           </section>
         </main>

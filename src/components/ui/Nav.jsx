@@ -57,7 +57,7 @@ export function Nav() {
   return (
     <Navbar className="sticky top-2 mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 z-50">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-        <Link to={"/"} className="mr-4 cursor-pointer py-1.5 font-semibold text-xl">
+        <Link to={"/"} className="mr-4 tracking-widest cursor-pointer py-1.5 font-semibold text-xl">
           Lopoelo
         </Link>
         <div className="hidden lg:block">{navList}</div>
