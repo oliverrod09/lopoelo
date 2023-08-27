@@ -129,7 +129,7 @@ export function Nav() {
         <Collapse open={openNav}>
           <div className="container mx-auto">
             {navList}
-            <div className="w-full">
+            <div className="w-full" onClick={handleOpen}>
               <Btn text={"Donate"}></Btn>
             </div>
           </div>

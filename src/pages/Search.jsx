@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Nav } from "../components/ui/Nav";
 import BtnSecond from "../components/BtnSecond";
+import { Footer } from "../components/ui/Footer";
 
 function Search() {
   const [poem, setPoem] = useState([]);
@@ -110,6 +111,7 @@ function Search() {
           </section>
         </main>
       </div>
+      <Footer></Footer>
     </>
   );
 }
