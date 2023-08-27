@@ -13,7 +13,7 @@ function Credit() {
           <div className="contentMain relative z-10 flex flex-col items-center lg:gap-6 lg:flex-row-reverse justify-around xl:mt-10vh">
             <div className="paragraphMain flex flex-col justify-center">
               <p className="text-2xl md:text-6xl mb-2 text-center text-white">
-                Sobre mi
+                Frontend Developer
               </p>
               <p
                 className="text-white mb-2 text-center text-sm md:text-base lg:text-lg px-8"

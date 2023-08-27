@@ -60,7 +60,7 @@ function Search() {
               />
             </div>
             <div className="flex gap-3">
-              {lines.length>0 
+              {poem.length>0 
               ?
               <div className={`w-full duration-500`} onClick={handdleSubmit}>
                 <BtnSecond text={"regenerate"}></BtnSecond>
@@ -95,7 +95,7 @@ function Search() {
             {lines.length > 0 ? (
               <div className="flex flex-col gap-4 items-center mt-10">
                 {lines.map((line, index) => (
-                  <span className="fontS hover:text-xl duration-200 text-sm md:text-lg font-light" key={index}>
+                  <span className="fontS text-center hover:text-xl duration-200 text-sm md:text-lg font-light" key={index}>
                     {line}
                   </span>
                 ))}
